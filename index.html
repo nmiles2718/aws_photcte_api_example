@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/css/print/pdf.css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/lib/js/html5shiv.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -13339,8 +13339,7 @@ results, status code
     <span class="n">ytransfers</span><span class="o">=</span><span class="n">ytransfers</span><span class="p">,</span>
     <span class="n">mjd</span><span class="o">=</span><span class="n">mjd</span><span class="p">,</span>
     <span class="n">local_skys</span><span class="o">=</span><span class="n">local_skys</span><span class="p">,</span>
-    <span class="n">fluxes</span><span class="o">=</span><span class="n">fluxes</span><span class="p">,</span>
-<span class="c1">#     api_key=&#39;asdfas&#39;</span>
+    <span class="n">fluxes</span><span class="o">=</span><span class="n">fluxes</span>
 <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of sources corrected: {len(cte_corrections[&#39;deltamag&#39;]):,}&quot;</span><span class="p">)</span>
 </pre></div>
@@ -13360,8 +13359,8 @@ results, status code
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of sources corrected: 1,000
-CPU times: user 24.5 ms, sys: 8.49 ms, total: 33 ms
-Wall time: 2.11 s
+CPU times: user 26.8 ms, sys: 8.36 ms, total: 35.2 ms
+Wall time: 693 ms
 </pre>
 </div>
 </div>
@@ -13382,8 +13381,8 @@ require(
       waitSeconds: 15
     },
     [
-      "https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/lib/js/head.min.js",
-      "https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/js/reveal.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -13398,9 +13397,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/lib/js/classList.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/plugin/notes/notes.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
